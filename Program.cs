@@ -1,4 +1,4 @@
-﻿namespace Blazor;
+﻿namespace Proyecto3;
 
 class Program
 {
