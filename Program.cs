@@ -1,6 +1,6 @@
 ﻿namespace Proyecto3;
 
-internal class Program
+class Program
 {
     static void Main(string[] args)
     {
