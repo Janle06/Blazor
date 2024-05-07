@@ -22,30 +22,26 @@ class Tarea1
         double BoletaCombo = 650; //Precio de boleto
         double PrecioTotal = 0; //El Precio total de todas las boletas
 
-        //Interfaz de la cartelera 
-        Console.WriteLine("---Cartelera---");
-        Console.WriteLine("Por favor seleccione una opcion:");
-        Console.WriteLine("1. Boleto Regular");
-        Console.WriteLine("2. Boleto 3D");
-        Console.WriteLine("3. Boleto VIP");
-        Console.WriteLine("4. Boleto con Combo");
-        Console.WriteLine("5. Salir");
-
         //Cantidad de tickets
         List<int> Tickets = new List<int>();
 
         bool salir = true;
-
         //Generador de escritura
-        const string path = "TextFiles//cartelera.txt";
-        //Generador de escritura
-
-        using (StreamReader generaEscritura = new StreamReader(path))
+        string filepath = "Cartelera.txt";
+        using (StreamWriter generadorEscritura = new StreamWriter(filepath))
         {
 
             while (salir)
             {
 
+                //Interfaz de la cartelera 
+                Console.WriteLine("---Cartelera---");
+                Console.WriteLine("Por favor seleccione una opcion:");
+                Console.WriteLine("1. Boleto Regular");
+                Console.WriteLine("2. Boleto 3D");
+                Console.WriteLine("3. Boleto VIP");
+                Console.WriteLine("4. Boleto con Combo");
+                Console.WriteLine("5. Salir");
                 int SeleccionBoleto = int.Parse(Console.ReadLine()!);
 
                 switch (SeleccionBoleto)
@@ -53,10 +49,10 @@ class Tarea1
                     case 1:
                         if (Balance >= BoletaRegular)
                         {
-                            Balance = Balance -= BoletaRegular;
-                            PrecioTotal = PrecioTotal += BoletaRegular;
+                            Balance -= BoletaRegular;
+                            PrecioTotal += BoletaRegular;
                             Console.WriteLine("Boleta regular agregada");
-                            generaEscritura.WriteLine("Boleta regular agregada");
+                            generadorEscritura.WriteLine("Boleta regular agregada");
                             Tickets.Add(1);
                         }
                         else
@@ -67,10 +63,10 @@ class Tarea1
                     case 2:
                         if (Balance >= Boleta3D)
                         {
-                            Balance = Balance -= Boleta3D;
-                            PrecioTotal = PrecioTotal += Boleta3D;
+                            Balance -= Boleta3D;
+                            PrecioTotal += Boleta3D;
                             Console.WriteLine("Boleta 3D agregada");
-                            generaEscritura.WriteLine("Boleta 3D agregada");
+                            generadorEscritura.WriteLine("Boleta 3D agregada");
                             Tickets.Add(1);
 
                         }
@@ -82,10 +78,10 @@ class Tarea1
                     case 3:
                         if (Balance >= BoletaVIP)
                         {
-                            Balance = Balance -= BoletaVIP;
-                            PrecioTotal = PrecioTotal += BoletaVIP;
+                            Balance -= BoletaVIP;
+                            PrecioTotal += BoletaVIP;
                             Console.WriteLine("Boleta VIP agregada");
-                            generaEscritura.WriteLine("Boleta VIP agregada");
+                            generadorEscritura.WriteLine("Boleta VIP agregada");
                             Tickets.Add(1);
                         }
                         else
@@ -96,10 +92,10 @@ class Tarea1
                     case 4:
                         if (Balance >= BoletaCombo)
                         {
-                            Balance = Balance -= BoletaCombo;
-                            PrecioTotal = PrecioTotal += BoletaCombo;
+                            Balance -= BoletaCombo;
+                            PrecioTotal += BoletaCombo;
                             Console.WriteLine("Boleta con Combo agregada");
-                            generaEscritura.WriteLine("Boleta con Combo agregada");
+                            generadorEscritura.WriteLine("Boleta con Combo agregada");
                             Tickets.Add(1);
                         }
                         else
@@ -115,7 +111,10 @@ class Tarea1
                         break;
                 }
             }
-            Console.WriteLine("Su balance es: " + Balance + " pesos" + " y ha compado " + Tickets.Count + " tickets");
+            generadorEscritura.WriteLine("Su balance es de " + Balance + " pesos" + " y ha comprado " + Tickets.Count + " tickets"
+            + " por un precio total de " + PrecioTotal + " pesos");
         }
+        Console.WriteLine("Su balance es de " + Balance + " pesos" + " y ha comprado " + Tickets.Count + " tickets"
+            + " por un precio total de " + PrecioTotal + " pesos");
     }
 }
