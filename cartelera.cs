@@ -213,7 +213,7 @@ class Tarea1
                                 switch (AgregarBalance)
                                 {
                                     case 1:
-                                        if (Balance >= Saldo1)
+                                        if (Balance == Saldo1)
                                         {
                                             Balance += Saldo1;
                                             PrecioTotal += Saldo1;
@@ -222,7 +222,7 @@ class Tarea1
                                         }
                                         break;
                                     case 2:
-                                        if (Balance >= Saldo2)
+                                        if (Balance == Saldo2)
                                         {
                                             Balance += Saldo2;
                                             PrecioTotal += Saldo2;
@@ -231,7 +231,7 @@ class Tarea1
                                         }
                                         break;
                                     case 3:
-                                        if (Balance >= Saldo3)
+                                        if (Balance == Saldo3)
                                         {
                                             Balance += Saldo3;
                                             PrecioTotal += Saldo3;
