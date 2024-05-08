@@ -1,0 +1,15 @@
+c:\Users\Hamlet\Desktop\Blazor\bin\Debug\net8.0\Blazor.exe
+c:\Users\Hamlet\Desktop\Blazor\bin\Debug\net8.0\Blazor.deps.json
+c:\Users\Hamlet\Desktop\Blazor\bin\Debug\net8.0\Blazor.runtimeconfig.json
+c:\Users\Hamlet\Desktop\Blazor\bin\Debug\net8.0\Blazor.dll
+c:\Users\Hamlet\Desktop\Blazor\bin\Debug\net8.0\Blazor.pdb
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.AssemblyInfoInputs.cache
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.AssemblyInfo.cs
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.csproj.CoreCompileInputs.cache
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.dll
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\refint\Blazor.dll
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.pdb
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.genruntimeconfig.cache
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\ref\Blazor.dll
+c:\Users\Hamlet\Desktop\Blazor\obj\Debug\net8.0\Blazor.sourcelink.json
